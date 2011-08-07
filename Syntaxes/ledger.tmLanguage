@@ -7,7 +7,7 @@
 		<string>ledger</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>^\d{4}[/-]\d{2}[/-]\d{2}.*</string>
+	<string>^(\d{4}[/-])?\d{2}[/-]\d{2}.*</string>
 	<key>foldingStopMarker</key>
 	<string>^\s*$</string>
 	<key>keyEquivalent</key>
@@ -27,21 +27,26 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator</string>
+					<string>string.other.ignore</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.edate</string>
+					<string>punctuation.separator</string>
 				</dict>
 				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>string.other.edate</string>
+				</dict>
+				<key>5</key>
 				<dict>
 					<key>name</key>
 					<string>markup.italic.desc</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(\d{4}[/-]\d{2}[/-]\d{2})([=]?)(\d{4}[/-]\d{2}[/-]\d{2})?\s+(.+)$</string>
+			<string>^((\d{4}[/-])?\d{2}[/-]\d{2})([=]?)(\d{4}[/-]\d{2}[/-]\d{2})?\s+(.+)$</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -92,7 +97,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s+([\(\)\w\:\s\_\-]+)\s+([\-\$\£\¥\฿\¢\₡\₢\₣\₤\₥\₦\₧\₨\₩\₪\₫\€\₭\₮\₯\¤\₠\₰\₱\d\.\,\_]+.*)$</string>
+			<string>^\s+([\(\)\w\:\s\_\-'"]+)\s+([\-\$\£\¥\฿\¢\₡\₢\₣\₤\₥\₦\₧\₨\₩\₪\₫\€\₭\₮\₯\¤\₠\₰\₱\d\.\,\_]+.*)$</string>
 		</dict>
 		<dict>
 			<key>captures</key>
